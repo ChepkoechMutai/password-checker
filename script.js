@@ -50,7 +50,7 @@ function checkPasswordStrength(){
         return false;
     }
 
-    if(password.value.length < 7){
+    if(password.value.length < 12){
         strength = 20;
         setColorAndText("blue", "Too short"); // short
     }else{
