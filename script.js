@@ -46,13 +46,13 @@ function checkPasswordStrength(){
     }
 
     if(password.value.length > 12){
-        setColorAndText("red", "Password greater than 12 char.");
+        setColorAndText("blue", "Password greater than 12 char.");
         return false;
     }
 
     if(password.value.length < 7){
         strength = 20;
-        setColorAndText("red", "Too short"); // short
+        setColorAndText("blue", "Too short"); // short
     }else{
         
         let lowerCase = password.value.match(/[a-z]/);
